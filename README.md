@@ -1,2 +1,3 @@
-# guilhermehenriquesantos.github.io
-Site pessoal, o objetivo é falar um pouco de mim e mostrar meus conhecimentos de design e desenvolvimento front-end.
+# Site pessoal
+
+Exemplificação do meu trabalho com desenvolvimento front-end e design de telas.
