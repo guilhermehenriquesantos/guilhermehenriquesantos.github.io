@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: black;
+    color: #ffffff;
+}
+
+.background-black {
+    background-color: black;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.background-black .flex-container .my-image img {
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    margin-left: 50px;
+}
+
+.background-black .flex-container .line {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 100px;
+    height: 10px;
+    background-color: #C58F75;
+}
+
+.flex-container h1 {
+    font-family: IBM Plex Sans Extralight;
+    font-size: 30px;
+    text-align: left;
+}
+
+.flex-container .presentation h1 {
+    width: 600px;
+    padding-left: 50px;
+}
+
+.flex-container #specialty::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.flex-container #specialty {
+    margin-bottom: 12px;
+    color: #C58F75;
+    font-family: IBM Plex Sans Regular;
+    font-size: 30px;
+}
+
+.background-grey {
+    overflow-y: hidden;
+    background-color: #0a0a0a;
+    /* transform: skewY(-3deg); */
+}
+
+.background-grey .flex-container {
+    align-items: flex-start;
+    /* transform: skewY(-3deg); */
+}
+
+.background-grey .flex-container .i-am {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 600px;
+    /* transform: skewY(3deg); */
+}
+
+.i-am>p {
+    margin-top: 20px;
+    font-family: IBM Plex Sans Extralight;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.image img {
+    margin-left: 50px;
+    width: 500px;
+    height: 500px;
+    /* transform: skewY(3deg); */
+}
+
+.background-black .graduation {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 600px;
+}
+
+.background-black .graduation p {
+    margin-top: 20px;
+    font-family: IBM Plex Sans Extralight;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.background-black .graduation .list {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.background-black .graduation .list li{
+    font-family: IBM Plex Sans Extralight;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 20px;
+}
