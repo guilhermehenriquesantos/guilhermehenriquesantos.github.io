@@ -3,7 +3,6 @@ nav {
     margin-right: 100px;
     height: 100%;
     padding-top: 30px;
-    background-color: black;
 }
 
 nav .navbar {
@@ -43,4 +42,36 @@ nav .navbar a:hover {
 
 nav .navbar a:active {
     text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    nav .navbar li {
+        font-size: 20px;
+    }
+
+    nav .navbar li img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    nav {
+        margin-top: 30px;
+    }
+
+    nav .navbar li {
+        font-size: 30px;
+    }
+
+    nav .navbar li img {
+        width: 35px;
+        height: 35px;
+    }
 }
