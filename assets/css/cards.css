@@ -37,3 +37,16 @@
     transform: translate(2px, -2px);
     box-shadow: -2px 2px 0px 0px rgba(20, 20, 20, 1);
 }
+
+@media screen and (max-width: 500px){
+    .cards {
+        width: 350px;
+        height: 300px;
+    }
+    
+    .cards img {
+        padding: 20px;
+        width: 200px;
+        height: 130px;
+    }
+}
