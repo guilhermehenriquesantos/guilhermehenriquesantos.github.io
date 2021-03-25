@@ -49,4 +49,8 @@
         width: 200px;
         height: 130px;
     }
+
+    .cards:hover {
+        transform: translate(0px, 0px);
+    }
 }
