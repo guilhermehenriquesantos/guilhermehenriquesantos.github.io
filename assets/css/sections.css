@@ -54,6 +54,17 @@
     font-size: 30px;
 }
 
+#atualizacao {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #C58F75;
+    font-family: IBM Plex Sans Regular;
+    font-size: 20px;
+}
+
 /* Parte responsiva da 1ª section (celulares e tablets) */
 @media screen and (max-width: 1000px) {
     .flex-container-intro {
