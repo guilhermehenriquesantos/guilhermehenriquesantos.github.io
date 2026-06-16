@@ -1,169 +1,1814 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="Guilherme Henrique | Desenvolvedor Full Stack focado em aplicações web, qualidade de código e experiência do usuário."
+        />
+        <meta
+            name="author"
+            content="Guilherme Henrique de Araújo Santos"
+        />
+        <meta
+            name="theme-color"
+            content="#faf6ee"
+        />
+        <title>Guilherme Henrique · guilherme.dev</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="canonical"
+            href="https://guilhermehenriquesantos.github.io/"
+        />
 
-    <title>Bem vindo!</title>
+        <meta
+            property="og:type"
+            content="website"
+        />
+        <meta
+            property="og:title"
+            content="Guilherme Henrique · guilherme.dev"
+        />
+        <meta
+            property="og:description"
+            content="Desenvolvedor Full Stack focado em aplicações web, qualidade de código e experiência do usuário."
+        />
+        <meta
+            property="og:url"
+            content="https://guilhermehenriquesantos.github.io/"
+        />
+        <meta
+            property="og:image"
+            content="https://guilhermehenriquesantos.github.io/assets/images/imagem-profissional.jpg"
+        />
+        <meta
+            name="twitter:card"
+            content="summary"
+        />
 
-    <link rel="shortcut icon" href="favicon-site.png" type="image/x-icon">
+        <!-- Favicon monograma GH — data URI embutido (sem dependência de arquivo externo) -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPCEtLSBCYWNrZ3JvdW5kIGNoYXJjb2FsIGNvbSBjYW50b3MgYXJyZWRvbmRhZG9zIC0tPgogIDxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjYiIGZpbGw9IiMxNTExMEEiLz4KCiAgPCEtLSBCb3JkYSBpbnRlcm5hIMOibWJhciBzdXRpbCAtLT4KICA8cmVjdCB4PSIxLjUiIHk9IjEuNSIgd2lkdGg9IjI5IiBoZWlnaHQ9IjI5IiByeD0iNC41IgogICAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U0QTI1MCIgc3Ryb2tlLXdpZHRoPSIwLjUiIG9wYWNpdHk9IjAuMyIvPgoKICA8IS0tIEcgKMOibWJhcikg4oCUIHBhdGggY29udMOtbnVvLCBjYW50b3MgYXJyZWRvbmRhZG9zIC0tPgogIDxwYXRoIGQ9Ik0xNCw4IEwzLDggTDMsMjQgTDE0LDI0IEwxNCwxNiBMOCwxNiIKICAgICAgICBmaWxsPSJub25lIgogICAgICAgIHN0cm9rZT0iI0U0QTI1MCIKICAgICAgICBzdHJva2Utd2lkdGg9IjIuNSIKICAgICAgICBzdHJva2UtbGluZWNhcD0icm91bmQiCiAgICAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoKICA8IS0tIEggKGNyZWFtKSDigJQgZHVhcyBiYXJyYXMgdmVydGljYWlzICsgY3Jvc3NiYXIgLS0+CiAgPHBhdGggZD0iTTE4LDggTDE4LDI0IE0xOCwxNiBMMjksMTYgTTI5LDggTDI5LDI0IgogICAgICAgIGZpbGw9Im5vbmUiCiAgICAgICAgc3Ryb2tlPSIjRjVGMEU4IgogICAgICAgIHN0cm9rZS13aWR0aD0iMi41IgogICAgICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K"
+        />
+        <!-- Fallback .ico para browsers muito antigos -->
+        <link
+            rel="icon"
+            href="favicon.ico"
+            sizes="48x48"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="favicon-512.svg"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/scroll.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
-    <link rel="stylesheet" href="assets/css/cards.css">
-</head>
+        <link
+            rel="stylesheet"
+            href="assets/css/style.css"
+        />
 
-<body>
-    <div class="container">
-        <section class="background-black">
-            <nav>
-                <ul class="navbar">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Guilherme Henrique de Araújo Santos",
+                "jobTitle": "Analista de Tecnologia da Informação",
+                "url": "https://guilhermehenriquesantos.github.io/",
+                "sameAs": [
+                    "https://www.linkedin.com/in/guilhermetech/",
+                    "https://github.com/guilhermehenriquesantos"
+                ]
+            }
+        </script>
+    </head>
+
+    <body>
+        <a
+            href="#conteudo"
+            class="skip-link"
+            data-pt="Pular para o conteúdo"
+            data-en="Skip to content"
+            >Pular para o conteúdo</a
+        >
+
+        <!-- ── NAV ─────────────────────────────────────── -->
+        <div class="nav-outer">
+            <nav
+                id="nav"
+                aria-label="Principal"
+            >
+                <a
+                    href="#"
+                    class="nav-logo"
+                    >~/ <strong>guilherme.dev</strong></a
+                >
+
+                <ul class="nav-links">
                     <li>
-                        <a href="https://github.com/guilhermehenriquesantos" target="_blank">
-                            <img src="assets/images/github.svg" alt="Github" title="guilhermehenriquesantos">Github
-                        </a>
+                        <a
+                            href="#sobre"
+                            data-pt="./sobre"
+                            data-en="./about"
+                            >./sobre</a
+                        >
                     </li>
-
                     <li>
-                        <a href="https://www.linkedin.com/in/guilherme-henrique-de-ara%C3%BAjo-santos/" target="_blank">
-                            <img src="assets/images/linkedin.svg" alt="LinkedIn"
-                                title="Guilherme Henrique de Araújo Santos">LinkedIn
-                        </a>
+                        <a
+                            href="#jornada"
+                            data-pt="./jornada"
+                            data-en="./journey"
+                            >./jornada</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#stack"
+                            data-pt="./stack"
+                            data-en="./stack"
+                            >./stack</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#formacao"
+                            data-pt="./formação"
+                            data-en="./education"
+                            >./formação</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#projetos"
+                            data-pt="./projetos"
+                            data-en="./projects"
+                            >./projetos</a
+                        >
                     </li>
                 </ul>
+
+                <div class="nav-actions">
+                    <button
+                        class="contrast-toggle"
+                        id="contrast-btn"
+                        aria-label="Alternar alto contraste"
+                        aria-pressed="false"
+                    >
+                        <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="9"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            />
+                            <path
+                                d="M12 3a9 9 0 0 1 0 18z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                        class="lang-toggle"
+                        aria-label="Alternar idioma (PT/EN)"
+                        id="lang-btn"
+                    >
+                        <span class="lang-pt active">PT</span>
+                        <span class="sep">/</span>
+                        <span class="lang-en">EN</span>
+                    </button>
+                    <a
+                        href="./assets/curriculo-guilherme-henrique.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn-cv"
+                        id="btn-cv"
+                    >
+                        <span
+                            data-pt="Currículo"
+                            data-en="Resume"
+                            >Currículo</span
+                        >
+                        ↗
+                    </a>
+                    <button
+                        class="nav-hamburger"
+                        aria-label="Menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-nav"
+                        id="hamburger"
+                    >
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
             </nav>
-        </section>
+        </div>
 
-        <br><br>
-        <b id="atualizacao"><u>Observação:</u> estarei atualizando meu portifólio em breve, então o design deste site e seu conteúdo mudarão completamente. <u>Estudando sobre UX/UI</u>.<br></b>
+        <!-- Mobile nav -->
+        <nav
+            class="mobile-nav"
+            id="mobile-nav"
+            aria-label="Menu móvel"
+        >
+            <a
+                href="#sobre"
+                data-pt="./sobre"
+                data-en="./about"
+                >./sobre</a
+            >
+            <a
+                href="#jornada"
+                data-pt="./jornada"
+                data-en="./journey"
+                >./jornada</a
+            >
+            <a
+                href="#stack"
+                data-pt="./stack"
+                data-en="./stack"
+                >./stack</a
+            >
+            <a
+                href="#formacao"
+                data-pt="./formação"
+                data-en="./education"
+                >./formação</a
+            >
+            <a
+                href="#projetos"
+                data-pt="./projetos"
+                data-en="./projects"
+                >./projetos</a
+            >
+            <div class="mobile-actions">
+                <button
+                    class="lang-toggle"
+                    aria-label="Alternar idioma (PT/EN)"
+                    id="lang-btn-mobile"
+                >
+                    <span class="lang-pt active">PT</span>
+                    <span class="sep">/</span>
+                    <span class="lang-en">EN</span>
+                </button>
+                <a
+                    href="./assets/curriculo-guilherme-henrique.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-cv"
+                >
+                    <span
+                        data-pt="Currículo"
+                        data-en="Resume"
+                        >Currículo</span
+                    >
+                    ↗
+                </a>
+            </div>
+        </nav>
 
-        <section class="background-black">
-            <div class="flex-container-intro">
-                <div class="my-image">
-                    <img src="assets/images/myImage.png" alt="My circle image">
+        <main id="conteudo">
+            <!-- ── HERO ───────────────────────────────────── -->
+            <section id="hero">
+                <div class="hero-left">
+                    <div class="hero-tag">
+                        <span>site:~$</span>
+                        <span class="hero-tag-cmd">man guilherme</span>
+                        <span class="blink"></span>
+                    </div>
+
+                    <h1 class="hero-name">
+                        Guilherme<br />Henrique<span class="dot">.</span>
+                    </h1>
+
+                    <div
+                        class="hero-typewriter"
+                        aria-hidden="true"
+                    >
+                        <span
+                            class="tw-text"
+                            id="tw-text"
+                        ></span
+                        ><span class="tw-cursor"></span>
+                    </div>
+
+                    <p
+                        class="hero-tagline"
+                        data-pt="Desenvolvedor Full Stack focado em aplicações web, qualidade de código e experiência do usuário."
+                        data-en="Full Stack developer focused on web applications, code quality and user experience."
+                    >
+                        Desenvolvedor Full Stack focado em aplicações web,
+                        qualidade de código e experiência do usuário.
+                    </p>
+
+                    <p class="hero-role">
+                        <span
+                            data-pt="Analista de TI"
+                            data-en="IT Analyst"
+                            >Analista de TI</span
+                        >
+                        ·
+                        <span
+                            data-pt="Desenvolvedor Full Stack"
+                            data-en="Full Stack Developer"
+                            >Desenvolvedor Full Stack</span
+                        >
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a
+                            href="#projetos"
+                            class="btn-primary"
+                        >
+                            <span
+                                data-pt="Ver projetos"
+                                data-en="See projects"
+                                >Ver projetos</span
+                            >
+                            →
+                        </a>
+                        <a
+                            href="#contato"
+                            class="btn-secondary"
+                            data-pt="Entrar em contato"
+                            data-en="Get in touch"
+                        >
+                            Entrar em contato
+                        </a>
+                    </div>
+
+                    <div class="cv-bar">
+                        <div class="cv-bar-item">
+                            <div class="cv-label">LOC</div>
+                            <div class="cv-value">Uberlândia, BR</div>
+                        </div>
+                        <div class="cv-bar-item">
+                            <div class="cv-label">LANG</div>
+                            <div class="cv-value">PT · EN</div>
+                        </div>
+                        <div class="cv-bar-item">
+                            <div class="cv-label">STATUS</div>
+                            <div
+                                class="cv-value"
+                                data-pt="Construindo aplicações web"
+                                data-en="Building web applications"
+                            >
+                                Construindo aplicações web
+                            </div>
+                        </div>
+                        <div class="cv-bar-item">
+                            <div class="cv-label">FOCUS</div>
+                            <div
+                                class="cv-value"
+                                data-pt="Full Stack · UX · IA"
+                                data-en="Full Stack · UX · AI"
+                            >
+                                Full Stack · UX · IA
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="presentation">
-                    <h1 id="specialty">Guilherme Henrique</h1>
+                <div class="hero-photo">
+                    <img
+                        src="assets/images/imagem-profissional.jpg"
+                        alt="Foto profissional de Guilherme Henrique"
+                        width="680"
+                        height="850"
+                        fetchpriority="high"
+                        id="hero-img"
+                    />
+                    <a
+                        href="#contato"
+                        class="hero-badge"
+                    >
+                        <span class="dot-green"></span>
+                        <span
+                            data-pt="Entrar em contato"
+                            data-en="Get in touch"
+                            >Entrar em contato</span
+                        >
+                    </a>
+                </div>
+            </section>
 
-                    <h1>Olá, seja bem vindo(a) à minha página pessoal, espero que goste!!</h1>
-
-                    <div class="line"></div>
+            <!-- ── MARQUEE ────────────────────────────────── -->
+            <div
+                class="marquee-wrap"
+                aria-hidden="true"
+            >
+                <div class="marquee-track">
+                    <span class="marquee-item">HTML</span>
+                    <span class="marquee-item">CSS</span>
+                    <span class="marquee-item">JavaScript</span>
+                    <span class="marquee-item">TypeScript</span>
+                    <span class="marquee-item">Angular</span>
+                    <span class="marquee-item">React</span>
+                    <span class="marquee-item">Java</span>
+                    <span class="marquee-item">Python</span>
+                    <span class="marquee-item">SQL</span>
+                    <span class="marquee-item">Apache Airflow</span>
+                    <span class="marquee-item">Metabase</span>
+                    <span class="marquee-item">GitLab</span>
+                    <span class="marquee-item">WildFly</span>
+                    <span class="marquee-item">Power BI</span>
+                    <span class="marquee-item">Clean Code</span>
+                    <span class="marquee-item">Delphi</span>
+                    <!-- duplicate for seamless loop -->
+                    <span class="marquee-item">HTML</span>
+                    <span class="marquee-item">CSS</span>
+                    <span class="marquee-item">JavaScript</span>
+                    <span class="marquee-item">TypeScript</span>
+                    <span class="marquee-item">Angular</span>
+                    <span class="marquee-item">React</span>
+                    <span class="marquee-item">Java</span>
+                    <span class="marquee-item">Python</span>
+                    <span class="marquee-item">SQL</span>
+                    <span class="marquee-item">Apache Airflow</span>
+                    <span class="marquee-item">Metabase</span>
+                    <span class="marquee-item">GitLab</span>
+                    <span class="marquee-item">WildFly</span>
+                    <span class="marquee-item">Power BI</span>
+                    <span class="marquee-item">Clean Code</span>
+                    <span class="marquee-item">Delphi</span>
                 </div>
             </div>
-        </section>
 
-        <section class="background-grey">
-            <div class="flex-container">
-                <div class="paragraphs">
-                    <h1 id="about">Um pouco sobre mim</h1>
-                    <p>
-                        “Meu objetivo profissional é consolidar minha carreira na área de Tecnologia da Informação. Com conhecimentos em desenvolvimento web front-end e back-end, estou comprometido em contribuir para projetos desafiadores e inovadores. Ao longo da minha trajetória, explorei o desenvolvimento de interfaces (UX/UI) e tenho dedicado esforços ao estudo de Segurança da Informação, uma área pela qual tenho grande interesse. Meu impulso é continuar aprendendo diariamente para aplicar minha experiência e alcançar grandes objetivos.”
+            <!-- ── SOBRE ──────────────────────────────────── -->
+            <section id="sobre">
+                <div class="section-inner">
+                    <div
+                        class="section-eyebrow"
+                        data-pt="./SOBRE"
+                        data-en="./ABOUT"
+                    >
+                        ./SOBRE
+                    </div>
+                    <h2
+                        class="section-title reveal"
+                        data-pt="Da curiosidade ao código"
+                        data-en="From curiosity to code"
+                    >
+                        Da curiosidade ao código
+                    </h2>
+                    <p
+                        class="section-sub reveal reveal-delay-1"
+                        data-pt='Uma jornada da pergunta "como isso funciona?" ao ambiente hospitalar crítico.'
+                        data-en='A journey from "how does this actually work?" to a mission-critical hospital environment.'
+                    >
+                        Uma jornada da pergunta "como isso funciona?" ao
+                        ambiente hospitalar crítico.
                     </p>
-                </div>
-                <div class="image">
-                    <img src="assets/images/person.svg" alt="person">
-                </div>
-            </div>
-        </section>
 
-        <section class="background-black">
-            <div class="flex-container">
-                <div class="image">
-                    <img src="assets/images/graduation.svg" alt="graduation">
+                    <div class="sobre-grid">
+                        <div class="reveal">
+                            <div class="quote-card">
+                                <div class="quote-mark">"</div>
+                                <p class="quote-text">
+                                    <span
+                                        data-pt="Da curiosidade pelo <em>como funciona</em> ao compromisso com sistemas que salvam vidas."
+                                        data-en="From curiosity about <em>how it works</em> to the commitment to systems that save lives."
+                                    >
+                                        Da curiosidade pelo
+                                        <em>como funciona</em> ao compromisso
+                                        com sistemas que salvam vidas.
+                                    </span>
+                                </p>
+                                <div class="quote-attr">
+                                    UFU ·
+                                    <span
+                                        data-pt="SISTEMAS DE INFORMAÇÃO"
+                                        data-en="INFORMATION SYSTEMS"
+                                        >SISTEMAS DE INFORMAÇÃO</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sobre-text reveal reveal-delay-1">
+                            <p
+                                data-pt="Até 2017, meu contato com tecnologia era o básico do dia a dia, Word, Excel, PowerPoint. Mas a curiosidade sobre como a internet realmente funciona me levou a uma decisão que mudaria tudo: buscar formação em TI."
+                                data-en="Until 2017, my contact with technology was just the basics, Word, Excel, PowerPoint. But curiosity about how the internet actually works led me to a decision that would change everything: pursuing an education in IT."
+                            >
+                                Até 2017, meu contato com tecnologia era o
+                                básico do dia a dia, Word, Excel, PowerPoint.
+                                Mas a curiosidade sobre como a internet
+                                realmente funciona me levou a uma decisão que
+                                mudaria tudo: buscar formação em TI.
+                            </p>
+                            <p
+                                data-pt="Me formei em Sistemas de Informação pela UFU e passei pelo PET-SI, onde aprendi a ensinar, pesquisar e me comunicar melhor. Foi nessa época que descobri o gosto pelo front-end e pela experiência do usuário, um cuidado que levo para tudo o que construo desde então."
+                                data-en="I earned my Information Systems degree at UFU and spent time at PET-SI, where I learned to teach, research and communicate better. That was when I discovered a taste for front-end and user experience, a care I have brought to everything I build since."
+                            >
+                                Me formei em Sistemas de Informação pela UFU e
+                                passei pelo PET-SI, onde aprendi a ensinar,
+                                pesquisar e me comunicar melhor. Foi nessa época
+                                que descobri o gosto pelo front-end e pela
+                                experiência do usuário, um cuidado que levo para
+                                tudo o que construo desde então.
+                            </p>
+                            <p
+                                data-pt="Hoje atuo como desenvolvedor full stack no ambiente hospitalar, construindo aplicações web, integrações e rotinas de dados. No dia a dia, uso inteligência artificial como apoio para revisar código, pensar arquitetura e ganhar produtividade, sem abrir mão da autoria e do senso crítico sobre o que entrego. Nas horas livres, estudo desenvolvimento mobile e novas formas de aplicar IA em projetos pessoais."
+                                data-en="Today I work as a full stack developer in a hospital environment, building web applications, integrations and data routines. Day to day, I use artificial intelligence to help me review code, think through architecture and stay productive, without giving up ownership or critical judgment over what I ship. In my free time, I study mobile development and new ways to apply AI in personal projects."
+                            >
+                                Hoje atuo como desenvolvedor full stack no
+                                ambiente hospitalar, construindo aplicações web,
+                                integrações e rotinas de dados. No dia a dia,
+                                uso inteligência artificial como apoio para
+                                revisar código, pensar arquitetura e ganhar
+                                produtividade, sem abrir mão da autoria e do
+                                senso crítico sobre o que entrego. Nas horas
+                                livres, estudo desenvolvimento mobile e novas
+                                formas de aplicar IA em projetos pessoais.
+                            </p>
+
+                            <div class="sobre-stats">
+                                <div>
+                                    <div class="stat-num">6+</div>
+                                    <div
+                                        class="stat-label"
+                                        data-pt="anos de experiência"
+                                        data-en="years of experience"
+                                    >
+                                        anos de experiência
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="stat-num">5</div>
+                                    <div
+                                        class="stat-label"
+                                        data-pt="empresas &amp; orgs"
+                                        data-en="companies &amp; orgs"
+                                    >
+                                        empresas &amp; orgs
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="stat-num">2</div>
+                                    <div
+                                        class="stat-label"
+                                        data-pt="pós-graduações"
+                                        data-en="postgrad degrees"
+                                    >
+                                        pós-graduações
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="paragraphs">
-                    <h1 id="formation">Formação</h1>
-                    <p>
-                        Cursando especialização em Segurança e Defesa Cibernética pela Uninter.
+            </section>
+
+            <!-- ── STACK ──────────────────────────────────── -->
+            <section id="stack">
+                <div class="section-inner">
+                    <div
+                        class="section-eyebrow light"
+                        data-pt="./STACK"
+                        data-en="./STACK"
+                    >
+                        ./STACK
+                    </div>
+                    <h2
+                        class="section-title light reveal"
+                        data-pt="Stack &amp; especialidades"
+                        data-en="Stack &amp; specialties"
+                    >
+                        Stack &amp; especialidades
+                    </h2>
+                    <p
+                        class="section-sub light reveal reveal-delay-1"
+                        data-pt="O que uso no trabalho e o que ando estudando."
+                        data-en="What I use at work and what I have been studying."
+                    >
+                        O que uso no trabalho e o que ando estudando.
                     </p>
-                    <p>
-                        Este curso visa me dar uma visão conceitual ampla sobre segurança e defesa cibernética, capacitando-me para liderar o desenvolvimento e a gestão de projetos de segurança cibernética, bem como a elaboração de estratégias para organizações.
-                    </p>
-                    <hr>
-                    <p>
-                        Formado em Sistemas de Informação pela UFU - Universidade Federal de Uberlândia.
-                    </p>
-                    <p>
-                        Através do curso pude conquistar muitos amigos e muita experiência com diversas atividades e a
-                        mais gratificante para mim foi poder ter participado do programa de educação tutorial sistemas
-                        de informação (PET-SI) por mais de 2 anos (Abr. 2018 até Jan. 2021). Por meio dele, pude ter
-                        contato com a pesquisa científica, mais precisamente na área da internet das coisas (V2C -
-                        protótipo de veículo conectado) e diversas outras atividades como:
-                    </p>
+
+                    <table
+                        class="stack-table reveal reveal-delay-2"
+                        aria-label="Tech stack"
+                    >
+                        <thead>
+                            <tr>
+                                <th
+                                    data-pt="TECH"
+                                    data-en="TECH"
+                                >
+                                    TECH
+                                </th>
+                                <th
+                                    data-pt="EXP"
+                                    data-en="EXP"
+                                >
+                                    EXP
+                                </th>
+                                <th
+                                    data-pt="CONTEXTO"
+                                    data-en="CONTEXT"
+                                >
+                                    CONTEXTO
+                                </th>
+                                <th
+                                    data-pt="TAGS"
+                                    data-en="TAGS"
+                                >
+                                    TAGS
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="tech-name">Java</div>
+                                    <div class="tech-cat">
+                                        BACKEND ·
+                                        <span
+                                            data-pt="PRINCIPAL"
+                                            data-en="PRINCIPAL"
+                                            >PRINCIPAL</span
+                                        >
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">4+</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Desenvolvimento e manutenção de aplicações corporativas com Spring Boot, WildFly, Maven, PrimeFaces, JSP, APIs REST e autenticação LDAP, em contextos de sistemas hospitalares e processos internos."
+                                        data-en="Development and maintenance of corporate applications using Spring Boot, WildFly, Maven, PrimeFaces, JSP, REST APIs and LDAP authentication, in hospital system and internal process contexts."
+                                    >
+                                        Desenvolvimento e manutenção de
+                                        aplicações corporativas com Spring Boot,
+                                        WildFly, Maven, PrimeFaces, JSP, APIs
+                                        REST e autenticação LDAP, em contextos
+                                        de sistemas hospitalares e processos
+                                        internos.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag amber"
+                                            >Spring Boot</span
+                                        ><span class="tag amber">WildFly</span
+                                        ><span class="tag">Maven</span
+                                        ><span class="tag">PrimeFaces</span
+                                        ><span class="tag">LDAP</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tech-name">Front-end</div>
+                                    <div class="tech-cat">
+                                        WEB · UX/UI ·
+                                        <span
+                                            data-pt="DIFERENCIAL"
+                                            data-en="EDGE"
+                                            >DIFERENCIAL</span
+                                        >
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">5+</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="HTML5, CSS, JavaScript e TypeScript, com atenção especial à experiência do usuário, responsividade, acessibilidade e clareza visual."
+                                        data-en="HTML5, CSS, JavaScript and TypeScript, with special attention to user experience, responsiveness, accessibility and visual clarity."
+                                    >
+                                        HTML5, CSS, JavaScript e TypeScript, com
+                                        atenção especial à experiência do
+                                        usuário, responsividade, acessibilidade
+                                        e clareza visual.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag amber">TypeScript</span
+                                        ><span class="tag">HTML5</span
+                                        ><span class="tag">CSS Grid</span
+                                        ><span class="tag">JS ES6+</span
+                                        ><span class="tag">Figma</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tech-name">Angular · React</div>
+                                    <div class="tech-cat">FRAMEWORKS</div>
+                                </td>
+                                <td><span class="tech-exp">5</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Angular em projetos corporativos com TypeScript, SCSS e lazy loading, em contextos de internet banking e aplicações internas. React em estudos e projetos pessoais."
+                                        data-en="Angular in corporate projects with TypeScript, SCSS and lazy loading, in internet banking and internal application contexts. React in studies and personal projects."
+                                    >
+                                        Angular em projetos corporativos com
+                                        TypeScript, SCSS e lazy loading, em
+                                        contextos de internet banking e
+                                        aplicações internas. React em estudos e
+                                        projetos pessoais.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag">TypeScript</span
+                                        ><span class="tag">SCSS</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tech-name">Python</div>
+                                    <div class="tech-cat">
+                                        <span
+                                            data-pt="AUTOMAÇÃO"
+                                            data-en="AUTOMATION"
+                                            >AUTOMAÇÃO</span
+                                        >
+                                        · DADOS
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">5</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Desenvolvimento de rotinas para automações, integrações e processamento de dados, incluindo DAGs no Apache Airflow para apoio a processos internos. No TCC, desenvolvi uma biblioteca leve em Python para simulação de operações de consenso em blockchain."
+                                        data-en="Development of routines for automation, integrations and data processing, including DAGs in Apache Airflow for internal process support. For my thesis, I built a lightweight Python library for simulating blockchain consensus operations."
+                                    >
+                                        Desenvolvimento de rotinas para
+                                        automações, integrações e processamento
+                                        de dados, incluindo DAGs no Apache
+                                        Airflow para apoio a processos internos.
+                                        No TCC, desenvolvi uma biblioteca leve
+                                        em Python para simulação de operações de
+                                        consenso em blockchain.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag">Airflow</span
+                                        ><span class="tag">Pandas</span
+                                        ><span class="tag">DAGs</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tech-name">SQL · DW</div>
+                                    <div class="tech-cat">
+                                        DADOS · ESTRUTURA
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">3+</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Estruturação de um Data Warehouse dividido em datamarts por setor, com uso de SQL para consultas, organização de dados, elaboração de rotinas e apoio à criação de dashboards e indicadores."
+                                        data-en="Structuring a Data Warehouse divided into sector-based datamarts, using SQL for queries, data organization, routine development and support for building dashboards and indicators."
+                                    >
+                                        Estruturação de um Data Warehouse
+                                        dividido em datamarts por setor, com uso
+                                        de SQL para consultas, organização de
+                                        dados, elaboração de rotinas e apoio à
+                                        criação de dashboards e indicadores.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag amber">SQL</span
+                                        ><span class="tag">Data Warehouse</span
+                                        ><span class="tag">Datamarts</span
+                                        ><span class="tag">PostgreSQL</span
+                                        ><span class="tag">DB2</span
+                                        ><span class="tag">DDL</span
+                                        ><span class="tag">DML</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div
+                                        class="tech-name"
+                                        data-pt="BI · Dashboards"
+                                        data-en="BI · Dashboards"
+                                    >
+                                        BI · Dashboards
+                                    </div>
+                                    <div class="tech-cat">
+                                        <span
+                                            data-pt="VISUALIZAÇÃO"
+                                            data-en="VISUALIZATION"
+                                            >VISUALIZAÇÃO</span
+                                        >
+                                        · INDICADORES
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">2+</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Criação de dashboards e indicadores gerenciais com Metabase e Power BI, utilizando dados estruturados em rotinas SQL e Data Warehouse para apoiar análises, acompanhamento de KPIs e tomada de decisão."
+                                        data-en="Building management dashboards and indicators with Metabase and Power BI, using data structured in SQL routines and a Data Warehouse to support analysis, KPI tracking and decision-making."
+                                    >
+                                        Criação de dashboards e indicadores
+                                        gerenciais com Metabase e Power BI,
+                                        utilizando dados estruturados em rotinas
+                                        SQL e Data Warehouse para apoiar
+                                        análises, acompanhamento de KPIs e
+                                        tomada de decisão.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag amber">Metabase</span
+                                        ><span class="tag amber">Power BI</span
+                                        ><span class="tag">KPIs</span
+                                        ><span class="tag">Dashboards</span
+                                        ><span class="tag">Indicadores</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tech-name">Airflow</div>
+                                    <div class="tech-cat">
+                                        <span
+                                            data-pt="ORQUESTRAÇÃO"
+                                            data-en="ORCHESTRATION"
+                                            >ORQUESTRAÇÃO</span
+                                        >
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">1+</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="DAGs de rotinas automatizadas para geração de relatórios no Metabase em produção hospitalar."
+                                        data-en="Automated-routine DAGs that feed Metabase reports in hospital production."
+                                    >
+                                        DAGs de rotinas automatizadas para
+                                        geração de relatórios no Metabase em
+                                        produção hospitalar.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div
+                                        class="tech-name"
+                                        data-pt="IA aplicada"
+                                        data-en="Applied AI"
+                                    >
+                                        IA aplicada
+                                    </div>
+                                    <div class="tech-cat">
+                                        <span
+                                            data-pt="PRODUTIVIDADE"
+                                            data-en="PRODUCTIVITY"
+                                            >PRODUTIVIDADE</span
+                                        >
+                                        ·
+                                        <span
+                                            data-pt="ESTUDO"
+                                            data-en="STUDY"
+                                            >ESTUDO</span
+                                        >
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">1+</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Uso IA no dia a dia do desenvolvimento: revisão de código, ideias de arquitetura, automações e produtividade. Sempre com autoria e senso crítico sobre o resultado."
+                                        data-en="I use AI in everyday development: code review, architecture ideas, automation and productivity. Always keeping ownership and critical judgment over the result."
+                                    >
+                                        Uso IA no dia a dia do desenvolvimento:
+                                        revisão de código, ideias de
+                                        arquitetura, automações e produtividade.
+                                        Sempre com autoria e senso crítico sobre
+                                        o resultado.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag">LLMs</span
+                                        ><span class="tag">Prompting</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tech-name">Git · GitLab</div>
+                                    <div class="tech-cat">
+                                        <span
+                                            data-pt="VERSIONAMENTO"
+                                            data-en="VERSION CONTROL"
+                                            >VERSIONAMENTO</span
+                                        >
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">5+</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Migração de versionamento de SVN para Git e apoio na organização do fluxo de desenvolvimento e colaboração."
+                                        data-en="Version-control migration from SVN to Git and support in organizing the development and collaboration workflow."
+                                    >
+                                        Migração de versionamento de SVN para
+                                        Git e apoio na organização do fluxo de
+                                        desenvolvimento e colaboração.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div
+                                        class="tech-name"
+                                        data-pt="Qualidade"
+                                        data-en="Quality"
+                                    >
+                                        Qualidade
+                                    </div>
+                                    <div class="tech-cat">
+                                        <span
+                                            data-pt="BOAS PRÁTICAS"
+                                            data-en="BEST PRACTICES"
+                                            >BOAS PRÁTICAS</span
+                                        >
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">3+</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Aplicação de princípios de Clean Code, organização de responsabilidades e boas práticas de desenvolvimento, com atenção a segurança baseada no OWASP Top 10 para reduzir riscos comuns em aplicações web."
+                                        data-en="Applying Clean Code principles, separation of concerns and development best practices, with attention to OWASP Top 10 security guidelines to reduce common web application risks."
+                                    >
+                                        Aplicação de princípios de Clean Code,
+                                        organização de responsabilidades e boas
+                                        práticas de desenvolvimento, com atenção
+                                        a segurança baseada no OWASP Top 10 para
+                                        reduzir riscos comuns em aplicações web.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag amber">Clean Code</span
+                                        ><span class="tag">OWASP Top 10</span
+                                        ><span class="tag">Boas Práticas</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tech-name">IAM · IDM</div>
+                                    <div class="tech-cat">
+                                        <span
+                                            data-pt="IDENTIDADE"
+                                            data-en="IDENTITY"
+                                            >IDENTIDADE</span
+                                        >
+                                        ·
+                                        <span
+                                            data-pt="ACESSO"
+                                            data-en="ACCESS"
+                                            >ACESSO</span
+                                        >
+                                        ·
+                                        <span
+                                            data-pt="COMPLEMENTAR"
+                                            data-en="COMPLEMENTARY"
+                                            >COMPLEMENTAR</span
+                                        >
+                                    </div>
+                                </td>
+                                <td><span class="tech-exp">1</span></td>
+                                <td>
+                                    <p
+                                        class="tech-context"
+                                        data-pt="Experiência complementar em Gestão de Identidades e Acessos, com atuação no ciclo de vida de credenciais, participação em modelos RBAC, matriz SoD e governança de acessos. Integração com Active Directory e LDAP também no desenvolvimento de aplicações corporativas."
+                                        data-en="Complementary experience in Identity and Access Management, covering the credential lifecycle, RBAC models, SoD matrix and access governance. Also integrated Active Directory and LDAP in corporate application development."
+                                    >
+                                        Experiência complementar em Gestão de
+                                        Identidades e Acessos, com atuação no
+                                        ciclo de vida de credenciais,
+                                        participação em modelos RBAC, matriz SoD
+                                        e governança de acessos. Integração com
+                                        Active Directory e LDAP também no
+                                        desenvolvimento de aplicações
+                                        corporativas.
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="tag-list">
+                                        <span class="tag">IAM</span
+                                        ><span class="tag">IDM</span
+                                        ><span class="tag">RBAC</span
+                                        ><span class="tag">SoD</span
+                                        ><span class="tag"
+                                            >Active Directory</span
+                                        ><span class="tag">LDAP</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="flex-cards">
-                    <div class="cards">
-                        <img src="assets/images/event.svg" alt="Evento">
-                        <p>Participei da organização e dos eventos relacionados à FACOM Techweek - 2018 até 2020</p>
+            </section>
+
+            <!-- ── JORNADA ────────────────────────────────── -->
+            <section id="jornada">
+                <div class="section-inner">
+                    <div
+                        class="section-eyebrow light"
+                        data-pt="./JORNADA"
+                        data-en="./JOURNEY"
+                    >
+                        ./JORNADA
                     </div>
-                    <div class="cards">
-                        <img src="assets/images/pet-people.svg" alt="Encontro de PET's">
-                        <p>Participei de um encontro dos PET's da UFU no ano de 2018, representando o PET - Sistemas de informação</p>
-                    </div>
-                    <div class="cards">
-                        <img src="assets/images/code.svg" alt="Código">
-                        <p>Ministrei aulas de programação para crianças e adoslescentes do ESEBA e todo o público do Uberhub Code Club</p>
+                    <h2
+                        class="section-title light reveal"
+                        data-pt="Trajetória profissional"
+                        data-en="Professional journey"
+                    >
+                        Trajetória profissional
+                    </h2>
+                    <p
+                        class="section-sub light reveal reveal-delay-1"
+                        data-pt="Do estágio ao analista - cada etapa conta."
+                        data-en="From intern to analyst - every step counts."
+                    >
+                        Do estágio ao analista - cada etapa conta.
+                    </p>
+
+                    <div class="timeline">
+                        <!-- HU Brasil -->
+                        <div class="tl-item active reveal">
+                            <div class="tl-dot"></div>
+                            <div
+                                class="tl-date"
+                                data-pt="Nov 2024 - presente"
+                                data-en="Nov 2024 - present"
+                            >
+                                Nov 2024 - presente
+                            </div>
+                            <div class="tl-company">
+                                <span
+                                    data-pt="HU Brasil (antiga Ebserh)"
+                                    data-en="HU Brasil (formerly Ebserh)"
+                                    >HU Brasil (antiga Ebserh)</span
+                                >
+                            </div>
+                            <div
+                                class="tl-role"
+                                data-pt="Analista de Tecnologia da Informação"
+                                data-en="IT Analyst"
+                            >
+                                Analista de Tecnologia da Informação
+                            </div>
+                            <ul class="tl-bullets">
+                                <li
+                                    data-pt="Construção do sistema de contratos, do desenvolvimento inicial ao deploy em produção"
+                                    data-en="Built the contracts system end to end, from initial development to production deploy"
+                                >
+                                    Construção do sistema de contratos, do
+                                    desenvolvimento inicial ao deploy em
+                                    produção
+                                </li>
+                                <li
+                                    data-pt="Reformulação completa do sistema de materiais consignados"
+                                    data-en="Full rebuild of the consigned-materials system"
+                                >
+                                    Reformulação completa do sistema de
+                                    materiais consignados
+                                </li>
+                                <li
+                                    data-pt="Módulo de autenticação em Java integrado a LDAP/AD, no WildFly"
+                                    data-en="Java authentication module integrated with LDAP/AD, on WildFly"
+                                >
+                                    Módulo de autenticação em Java integrado a
+                                    LDAP/AD, no WildFly
+                                </li>
+                                <li
+                                    data-pt="DAGs no Apache Airflow para rotinas de dados e dashboards no Metabase"
+                                    data-en="Apache Airflow DAGs for data routines and Metabase dashboards"
+                                >
+                                    DAGs no Apache Airflow para rotinas de dados
+                                    e dashboards no Metabase
+                                </li>
+                                <li
+                                    data-pt="Migração de versionamento de SVN para Git e apoio na organização do fluxo de desenvolvimento"
+                                    data-en="Version-control migration from SVN to Git and support in organizing the development workflow"
+                                >
+                                    Migração de versionamento de SVN para Git e
+                                    apoio na organização do fluxo de
+                                    desenvolvimento
+                                </li>
+                                <li
+                                    data-pt="Provas de conceito (POCs) para validação de novas funcionalidades e soluções técnicas"
+                                    data-en="Proofs of concept (POCs) to validate new features and technical solutions"
+                                >
+                                    Provas de conceito (POCs) para validação de
+                                    novas funcionalidades e soluções técnicas
+                                </li>
+                                <li
+                                    data-pt="Orientação de novos colaboradores e estagiários e apoio em melhorias de sistemas internos"
+                                    data-en="Mentoring of new hires and interns and support in improving internal systems"
+                                >
+                                    Orientação de novos colaboradores e
+                                    estagiários e apoio em melhorias de sistemas
+                                    internos
+                                </li>
+                            </ul>
+                            <div class="tag-list">
+                                <span class="tag amber">Java</span
+                                ><span class="tag amber">Python</span
+                                ><span class="tag amber">JavaScript</span
+                                ><span class="tag amber">SQL</span>
+                                <span class="tag">Airflow</span
+                                ><span class="tag">Metabase</span
+                                ><span class="tag">GitLab</span
+                                ><span class="tag">WildFly</span
+                                ><span class="tag">LDAP</span
+                                ><span class="tag">Delphi</span>
+                            </div>
+                        </div>
+
+                        <!-- Tribanco -->
+                        <div class="tl-item reveal reveal-delay-1">
+                            <div class="tl-dot"></div>
+                            <div
+                                class="tl-date"
+                                data-pt="Fev 2024 - Out 2024"
+                                data-en="Feb 2024 - Oct 2024"
+                            >
+                                Fev 2024 - Out 2024
+                            </div>
+                            <div class="tl-company">Tribanco</div>
+                            <div
+                                class="tl-role"
+                                data-pt="Assistente de Segurança da Informação"
+                                data-en="Information Security Assistant"
+                            >
+                                Assistente de Segurança da Informação
+                            </div>
+                            <ul class="tl-bullets">
+                                <li
+                                    data-pt="Gestão de Identidades e Acessos (IDM + Active Directory)"
+                                    data-en="Identity &amp; Access Management (IDM + Active Directory)"
+                                >
+                                    Gestão de Identidades e Acessos (IDM +
+                                    Active Directory)
+                                </li>
+                                <li
+                                    data-pt="Construção de Matriz SoD"
+                                    data-en="Built a Segregation-of-Duties matrix"
+                                >
+                                    Construção de Matriz SoD
+                                </li>
+                                <li
+                                    data-pt="Implementação do modelo RBAC"
+                                    data-en="Rolled out the RBAC model"
+                                >
+                                    Implementação do modelo RBAC
+                                </li>
+                            </ul>
+                            <div class="tag-list">
+                                <span class="tag">Power BI</span
+                                ><span class="tag">Active Directory</span
+                                ><span class="tag">IDM</span
+                                ><span class="tag">RBAC</span
+                                ><span class="tag">Matriz SoD</span>
+                            </div>
+                        </div>
+
+                        <!-- Pausa -->
+                        <div
+                            class="tl-pause reveal reveal-delay-2"
+                            data-pt="Set 2022 - Jan 2024 · Pausa estratégica: preparação para concursos, aprovação na Ebserh e conclusão de 2 pós-graduações."
+                            data-en="Sep 2022 - Jan 2024 · Strategic break: civil-service prep, approval at Ebserh and completion of 2 postgrad degrees."
+                        >
+                            Set 2022 - Jan 2024 · Pausa estratégica: preparação
+                            para concursos, aprovação na Ebserh e conclusão de 2
+                            pós-graduações.
+                        </div>
+
+                        <!-- Sankhya -->
+                        <div class="tl-item reveal reveal-delay-1">
+                            <div class="tl-dot"></div>
+                            <div
+                                class="tl-date"
+                                data-pt="Mar 2022 - Ago 2022"
+                                data-en="Mar 2022 - Aug 2022"
+                            >
+                                Mar 2022 - Ago 2022
+                            </div>
+                            <div class="tl-company">
+                                <span
+                                    data-pt="Sankhya Gestão de Negócios"
+                                    data-en="Sankhya Gestão de Negócios"
+                                    >Sankhya Gestão de Negócios</span
+                                >
+                            </div>
+                            <div
+                                class="tl-role"
+                                data-pt="Desenvolvedor Full Stack Júnior"
+                                data-en="Junior Full Stack Developer"
+                            >
+                                Desenvolvedor Full Stack Júnior
+                            </div>
+                            <ul class="tl-bullets">
+                                <li
+                                    data-pt="Transferências de funcionários e cálculo de dias de férias por faltas"
+                                    data-en="Employee transfers and vacation-days-per-absence calc"
+                                >
+                                    Transferências de funcionários e cálculo de
+                                    dias de férias por faltas
+                                </li>
+                                <li
+                                    data-pt="Criação e manutenção de funcionalidades de folha de pagamento"
+                                    data-en="Creation and maintenance of payroll features"
+                                >
+                                    Criação e manutenção de funcionalidades de
+                                    folha de pagamento
+                                </li>
+                                <li
+                                    data-pt="Redesign da aba de geração de DARF, do estudo de UX à implementação"
+                                    data-en="Redesign of the DARF-generation tab, from UX study to implementation"
+                                >
+                                    Redesign da aba de geração de DARF, do
+                                    estudo de UX à implementação
+                                </li>
+                            </ul>
+                            <div class="tag-list">
+                                <span class="tag">Java</span
+                                ><span class="tag">AngularJS</span
+                                ><span class="tag">Oracle</span
+                                ><span class="tag">SQL Server</span
+                                ><span class="tag">GitLab</span
+                                ><span class="tag">Figma</span>
+                            </div>
+                        </div>
+
+                        <!-- Bradesco -->
+                        <div class="tl-item reveal reveal-delay-2">
+                            <div class="tl-dot"></div>
+                            <div
+                                class="tl-date"
+                                data-pt="Out 2019 - Out 2021"
+                                data-en="Oct 2019 - Oct 2021"
+                            >
+                                Out 2019 - Out 2021
+                            </div>
+                            <div class="tl-company">
+                                <span
+                                    data-pt="Banco Bradesco S.A."
+                                    data-en="Banco Bradesco S.A."
+                                    >Banco Bradesco S.A.</span
+                                >
+                            </div>
+                            <div
+                                class="tl-role"
+                                data-pt="Estagiário em Análise de Sistemas"
+                                data-en="Systems Analysis Intern"
+                            >
+                                Estagiário em Análise de Sistemas
+                            </div>
+                            <ul class="tl-bullets">
+                                <li
+                                    data-pt="Sistema de gerenciamento de landing pages de parceiros"
+                                    data-en="Partner-landing-page management system"
+                                >
+                                    Sistema de gerenciamento de landing pages de
+                                    parceiros
+                                </li>
+                                <li
+                                    data-pt="Reformulação da aba de cartões no internet banking"
+                                    data-en="Rebuilt the cards tab in internet banking"
+                                >
+                                    Reformulação da aba de cartões no internet
+                                    banking
+                                </li>
+                                <li
+                                    data-pt='UX/UI e dev do portal de gerenciamento de habilidades da IA "Bia"'
+                                    data-en='UX/UI and dev of the "Bia" AI skills portal'
+                                >
+                                    UX/UI e dev do portal de gerenciamento de
+                                    habilidades da IA "Bia"
+                                </li>
+                            </ul>
+                            <div class="tag-list">
+                                <span class="tag">Angular</span
+                                ><span class="tag">Java</span
+                                ><span class="tag">Spring Boot</span
+                                ><span class="tag">Jest</span
+                                ><span class="tag">Cucumber</span
+                                ><span class="tag">Figma</span>
+                            </div>
+                        </div>
+
+                        <!-- PET-SI -->
+                        <div class="tl-item reveal reveal-delay-3">
+                            <div class="tl-dot"></div>
+                            <div
+                                class="tl-date"
+                                data-pt="Abr 2018 - Jan 2021"
+                                data-en="Apr 2018 - Jan 2021"
+                            >
+                                Abr 2018 - Jan 2021
+                            </div>
+                            <div class="tl-company">
+                                <span
+                                    data-pt="UFU - PET Sistemas de Informação"
+                                    data-en="UFU - PET Sistemas de Informação"
+                                    >UFU - PET Sistemas de Informação</span
+                                >
+                            </div>
+                            <div
+                                class="tl-role"
+                                data-pt="Pesquisador / Ensino"
+                                data-en="Researcher / Teaching"
+                            >
+                                Pesquisador / Ensino
+                            </div>
+                            <ul class="tl-bullets">
+                                <li
+                                    data-pt="Pesquisa científica em IoT (sensores em veículo clássico com App Inventor)"
+                                    data-en="IoT research (sensors on a classic car with App Inventor)"
+                                >
+                                    Pesquisa científica em IoT (sensores em
+                                    veículo clássico com App Inventor)
+                                </li>
+                                <li
+                                    data-pt="Ensino de programação (Scratch, Web) para crianças/adolescentes"
+                                    data-en="Teaching programming (Scratch, Web) to kids and teens"
+                                >
+                                    Ensino de programação (Scratch, Web) para
+                                    crianças/adolescentes
+                                </li>
+                                <li
+                                    data-pt="Inclusão digital para idosos"
+                                    data-en="Digital inclusion for seniors"
+                                >
+                                    Inclusão digital para idosos
+                                </li>
+                            </ul>
+                            <div class="tag-list">
+                                <span class="tag">HTML</span
+                                ><span class="tag">CSS</span
+                                ><span class="tag">JavaScript</span
+                                ><span class="tag">IoT</span
+                                ><span class="tag">App Inventor</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex-cards">
-                    <div class="cards">
-                        <img src="assets/images/digital-inclusion.svg" alt="Inclusão digital">
-                        <p>Ministrei aulas do projeto inclusão digital para idosos juntamente com o PET da Engenharia Civil</p>
+            </section>
+
+            <!-- ── FORMAÇÃO ───────────────────────────────── -->
+            <section id="formacao">
+                <div class="section-inner">
+                    <div
+                        class="section-eyebrow"
+                        data-pt="./FORMAÇÃO"
+                        data-en="./EDUCATION"
+                    >
+                        ./FORMAÇÃO
                     </div>
-                    <div class="cards">
-                        <img src="assets/images/podcast.svg" alt="Podcast">
-                        <p>Participei da criação, organização e gravação dos podcasts do PET - Sistemas de informação</p>
+                    <h2
+                        class="section-title reveal"
+                        data-pt="Base acadêmica"
+                        data-en="Academic background"
+                    >
+                        Base acadêmica
+                    </h2>
+                    <p
+                        class="section-sub reveal reveal-delay-1"
+                        data-pt="Graduação, especializações e programa de tutoria."
+                        data-en="Undergraduate degree, specialisations and tutorial programme."
+                    >
+                        Graduação, especializações e programa de tutoria.
+                    </p>
+
+                    <div class="formacao-grid reveal reveal-delay-2">
+                        <!-- UFU — card principal -->
+                        <div class="formacao-card formacao-card--main">
+                            <div class="formacao-num">01</div>
+                            <div class="formacao-body">
+                                <div class="formacao-degree">
+                                    <span
+                                        data-pt="Bacharelado"
+                                        data-en="Bachelor's Degree"
+                                        >Bacharelado</span
+                                    >
+                                </div>
+                                <div class="formacao-course">
+                                    <span
+                                        data-pt="Sistemas de Informação"
+                                        data-en="Information Systems"
+                                        >Sistemas de Informação</span
+                                    >
+                                </div>
+                                <div class="formacao-institution">
+                                    Universidade Federal de Uberlândia · UFU
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UNINTER — dois cards empilhados -->
+                        <div class="formacao-specs">
+                            <div class="formacao-card">
+                                <div class="formacao-num">02</div>
+                                <div class="formacao-body">
+                                    <div class="formacao-degree">
+                                        <span
+                                            data-pt="Especialização"
+                                            data-en="Graduate Certificate"
+                                            >Especialização</span
+                                        >
+                                    </div>
+                                    <div class="formacao-course">
+                                        <span
+                                            data-pt="Segurança e Defesa Cibernética"
+                                            data-en="Cybersecurity and Cyber Defence"
+                                            >Segurança e Defesa
+                                            Cibernética</span
+                                        >
+                                    </div>
+                                    <div class="formacao-institution">
+                                        UNINTER
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="formacao-card">
+                                <div class="formacao-num">03</div>
+                                <div class="formacao-body">
+                                    <div class="formacao-degree">
+                                        <span
+                                            data-pt="Especialização"
+                                            data-en="Graduate Certificate"
+                                            >Especialização</span
+                                        >
+                                    </div>
+                                    <div class="formacao-course">
+                                        <span
+                                            data-pt="Ciência de Dados e Inteligência Artificial"
+                                            data-en="Data Science and Artificial Intelligence"
+                                            >Ciência de Dados e Inteligência
+                                            Artificial</span
+                                        >
+                                    </div>
+                                    <div class="formacao-institution">
+                                        UNINTER
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cards">
-                        <img src="assets/images/site.svg" alt="Site">
-                        <p>Participei da criação do design e implementação do novo site do PET - Sistemas de informação - 2020 | 2021
+
+                    <!-- PET-SI callout -->
+                    <div class="pet-block reveal reveal-delay-3">
+                        <div class="pet-meta">
+                            <div class="pet-badge">PET-SI</div>
+                            <div class="pet-info">
+                                <div class="pet-title">
+                                    <span
+                                        data-pt="Programa de Educação Tutorial"
+                                        data-en="Tutorial Education Programme"
+                                        >Programa de Educação Tutorial</span
+                                    >
+                                </div>
+                                <div class="pet-period">UFU · 2018 – 2021</div>
+                            </div>
+                        </div>
+                        <p
+                            class="pet-text"
+                            data-pt="Atuei em pesquisa científica (IoT com integração de sensores e App Inventor), ensino de programação para crianças e adolescentes, inclusão digital para idosos, organização de eventos acadêmicos e desenvolvimento front-end para projetos institucionais."
+                            data-en="I worked on scientific research (IoT with sensors and App Inventor), programming teaching for children and teens, digital inclusion for seniors, academic event organisation and front-end development for institutional projects."
+                        >
+                            Atuei em pesquisa científica (IoT com integração de
+                            sensores e App Inventor), ensino de programação para
+                            crianças e adolescentes, inclusão digital para
+                            idosos, organização de eventos acadêmicos e
+                            desenvolvimento front-end para projetos
+                            institucionais.
                         </p>
+                        <div class="tag-list">
+                            <span class="tag tag--ink">Pesquisa científica</span
+                            ><span class="tag tag--ink">IoT</span
+                            ><span class="tag tag--ink">Ensino</span
+                            ><span class="tag tag--ink">Inclusão digital</span
+                            ><span class="tag tag--ink">HTML · CSS · JS</span
+                            ><span class="tag tag--ink">Eventos</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="background-grey">
-            <div class="flex-container">
-                <div class="paragraphs">
-                    <h1 id="experience">Experiência</h1>
-                    <p>
-                        Desenvolvedor Full Stack na Sankhya Gestão de Negócios.
-                    </p>
-                    <p>
-                        Por lá pude atuar com AngularJS, no front-end, utilizando o framework próprio da empresa. Também utilizei Java no back-end, SQL Server e Oracle para banco de dados.
-                    </p>
-                    <hr>
-                    <p>
-                        Também fui estagiário por 2 anos no departamento de sistemas do banco Bradesco, onde
-                        atuei como desenvolvedor web e tive mais experiências realizando a parte front-end, design de
-                        aplicações, testes automatizados e documentação de alguns sistemas do banco.
-                    </p>
-                    <p>
-                        A stack que trabalho atualmente condiz com o framework Angular no front-end, utilizando HTML,
-                        SCSS e TypeScript. Também realizei alguns trabalhos de back-end utilizando a linguagem Java.
-                    </p>
+            <!-- ── PROJETOS ───────────────────────────────── -->
+            <section id="projetos">
+                <div class="section-inner">
+                    <div
+                        class="section-eyebrow"
+                        data-pt="./PROJETOS"
+                        data-en="./PROJECTS"
+                    >
+                        ./PROJETOS
+                    </div>
+                    <h2
+                        class="section-title reveal"
+                        data-pt="Repositórios no GitHub"
+                        data-en="GitHub repositories"
+                    >
+                        Repositórios no GitHub
+                    </h2>
+                    <div class="projects-status reveal reveal-delay-1">
+                        <span class="dot-live"></span>
+                        <span
+                            data-pt="Carregado via GitHub API - repos públicos em tempo real."
+                            data-en="Loaded via GitHub API - live public repos, no static data."
+                            >Carregado via GitHub API - repos públicos em tempo
+                            real.</span
+                        >
+                    </div>
+
+                    <!-- Featured project (static, TCC) -->
+                    <div class="featured-card reveal reveal-delay-2">
+                        <div class="featured-left">
+                            <div
+                                class="featured-badge"
+                                data-pt="PROJETO EM DESTAQUE"
+                                data-en="FEATURED PROJECT"
+                            >
+                                PROJETO EM DESTAQUE
+                            </div>
+                            <div
+                                class="featured-meta"
+                                data-pt="Monografia · Sistemas de Informação · UFU"
+                                data-en="Thesis · Information Systems · UFU"
+                            >
+                                Monografia · Sistemas de Informação · UFU
+                            </div>
+                            <div class="featured-stack">
+                                <div class="featured-stack-item">// stack</div>
+                                <div class="featured-stack-item">
+                                    <strong>Python</strong> · PoW
+                                </div>
+                                <div class="featured-stack-item">
+                                    Blockchain.sim
+                                </div>
+                                <div class="featured-stack-item">
+                                    Forks · Consensus
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-right">
+                            <div>
+                                <div
+                                    class="featured-type"
+                                    data-pt="Biblioteca Python · TCC"
+                                    data-en="Python Library · Thesis"
+                                >
+                                    Biblioteca Python · TCC
+                                </div>
+                                <div
+                                    class="featured-title"
+                                    data-pt="Biblioteca Blockchain peso-leve em Python"
+                                    data-en="Lightweight Blockchain library in Python"
+                                >
+                                    Biblioteca Blockchain peso-leve em Python
+                                </div>
+                            </div>
+                            <p
+                                class="featured-desc"
+                                data-pt="Biblioteca peso-leve em Python para simulação de operações em uma blockchain baseada no algoritmo de prova de trabalho (PoW). Permite criar mineradores, realizar tentativas de mineração, obter consenso na propagação de novos blocos, simular forks, explorar a segurança da aplicação e gerar arquivos com informações da rede."
+                                data-en="A lightweight Python library for simulating operations on a blockchain based on the Proof-of-Work (PoW) algorithm. It lets you create miners, run mining attempts, reach consensus on new-block propagation, simulate forks, explore application security and generate artifacts with network information."
+                            >
+                                Biblioteca peso-leve em Python para simulação de
+                                operações em uma blockchain baseada no algoritmo
+                                de prova de trabalho (PoW). Permite criar
+                                mineradores, realizar tentativas de mineração,
+                                obter consenso na propagação de novos blocos,
+                                simular forks, explorar a segurança da aplicação
+                                e gerar arquivos com informações da rede.
+                            </p>
+                            <a
+                                href="https://github.com/guilhermehenriquesantos/blockchain-pow-py"
+                                target="_blank"
+                                rel="noopener"
+                                class="featured-link"
+                            >
+                                <span
+                                    data-pt="Ler abstract"
+                                    data-en="Read abstract"
+                                    >Ler abstract</span
+                                >
+                                ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic repos grid -->
+                    <div
+                        id="repos-grid"
+                        class="repos-grid reveal reveal-delay-3"
+                    >
+                        <div
+                            class="repos-loading"
+                            data-pt="Carregando repositórios..."
+                            data-en="Loading repositories..."
+                        >
+                            Carregando repositórios...
+                        </div>
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="assets/images/developer.svg" alt="Developer">
+            </section>
+
+            <!-- ── CONTATO ────────────────────────────────── -->
+            <section id="contato">
+                <div class="section-inner">
+                    <div
+                        class="section-eyebrow light"
+                        data-pt="./CONTATO"
+                        data-en="./CONTACT"
+                    >
+                        ./CONTATO
+                    </div>
+                    <h2
+                        class="section-title light reveal"
+                        data-pt="Vamos conversar"
+                        data-en="Let's talk"
+                    >
+                        Vamos conversar
+                    </h2>
+                    <p
+                        class="section-sub light reveal reveal-delay-1"
+                        data-pt="Se quiser trocar uma ideia sobre tecnologia, projetos ou colaborações, é só chamar."
+                        data-en="If you want to talk tech, projects or collaborations, just reach out."
+                    >
+                        Se quiser trocar uma ideia sobre tecnologia, projetos ou
+                        colaborações, é só chamar.
+                    </p>
+
+                    <div class="contact-grid reveal reveal-delay-2">
+                        <a
+                            href="https://www.linkedin.com/in/guilhermetech/"
+                            target="_blank"
+                            rel="noopener"
+                            class="contact-card"
+                        >
+                            <div class="contact-icon">
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                    />
+                                    <rect
+                                        x="2"
+                                        y="9"
+                                        width="4"
+                                        height="12"
+                                    />
+                                    <circle
+                                        cx="4"
+                                        cy="4"
+                                        r="2"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">LINKEDIN</div>
+                                <div class="contact-value">/guilhermetech</div>
+                            </div>
+                        </a>
+
+                        <a
+                            href="https://github.com/guilhermehenriquesantos"
+                            target="_blank"
+                            rel="noopener"
+                            class="contact-card"
+                        >
+                            <div class="contact-icon">
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">GITHUB</div>
+                                <div class="contact-value">
+                                    guilhermehenriquesantos
+                                </div>
+                            </div>
+                        </a>
+
+                        <a
+                            href="mailto:guilhermeher10@gmail.com"
+                            class="contact-card"
+                        >
+                            <div class="contact-icon">
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">E-MAIL</div>
+                                <div class="contact-value">
+                                    guilhermeher10@gmail.com
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+            </section>
+        </main>
+
+        <!-- ── FOOTER ─────────────────────────────────── -->
+        <footer>
+            <div class="footer-inner">
+                <span class="footer-copy">© 2026 Guilherme Henrique</span>
+                <span class="footer-version">guilherme.dev</span>
             </div>
-        </section>
+        </footer>
 
-        <section class="background-black">
-            <footer>
-                <p>&copy; Guilherme Henrique</p>
-            </footer>
-        </section>
-    </div>
-</body>
+        <!-- ── BACK TO TOP ──────────────────────────────── -->
+        <button
+            id="back-to-top"
+            aria-label="Voltar ao topo"
+        >
+            <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+            >
+                <polyline points="18 15 12 9 6 15" />
+            </svg>
+        </button>
 
-<script src="javascript/functions.js" type="text/javascript"></script>
-
+        <script src="javascript/functions.js"></script>
+    </body>
 </html>

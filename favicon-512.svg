@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#15110A"/>
+
+  <!-- Borda interna âmbar sutil -->
+  <rect x="18" y="18" width="476" height="476" rx="80"
+        fill="none" stroke="#E4A250" stroke-width="6" opacity="0.25"/>
+
+  <!-- G (âmbar) — path contínuo com cantos arredondados -->
+  <path d="M228,128 L52,128 L52,384 L228,384 L228,256 L128,256"
+        fill="none"
+        stroke="#E4A250"
+        stroke-width="38"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- H (cream) — duas barras + crossbar -->
+  <path d="M284,128 L284,384 M284,256 L460,256 M460,128 L460,384"
+        fill="none"
+        stroke="#F5F0E8"
+        stroke-width="38"
+        stroke-linecap="round"/>
+</svg>
