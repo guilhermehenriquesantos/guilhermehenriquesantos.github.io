@@ -186,6 +186,16 @@ button:focus-visible {
     font-size: 13px;
     color: var(--ink-mid);
     letter-spacing: 0.02em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-logo-img {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    flex-shrink: 0;
 }
 
 .nav-logo strong {
@@ -404,6 +414,13 @@ h1.hero-name .dot {
     color: var(--amber);
 }
 
+h1.hero-name .name-fire {
+    text-decoration: underline;
+    text-decoration-color: var(--amber);
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+
 .hero-tagline {
     font-family: var(--font-body);
     font-size: clamp(15px, 1.8vw, 19px);
@@ -466,6 +483,33 @@ h1.hero-name .dot {
 .btn-secondary:hover {
     background: rgba(21, 17, 10, 0.06);
     border-color: rgba(21, 17, 10, 0.7);
+}
+
+.hero-social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.hero-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--ink-muted);
+    transition: color var(--transition);
+}
+
+.hero-social a:hover {
+    color: var(--amber-text);
+}
+
+.hero-social-sep {
+    color: var(--ink-muted);
+    opacity: 0.4;
+    font-size: 13px;
 }
 
 .cv-bar {
@@ -739,7 +783,7 @@ h2.section-title.light {
 .stat-num {
     font-family: var(--font-display);
     font-size: clamp(28px, 3vw, 40px);
-    color: var(--ink);
+    color: var(--amber-text);
     line-height: 1;
 }
 
