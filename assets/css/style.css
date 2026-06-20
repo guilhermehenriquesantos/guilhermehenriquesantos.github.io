@@ -1497,11 +1497,13 @@ footer {
     font-family: var(--font-mono);
     font-size: 13px;
     color: var(--ink-muted);
-    min-height: 22px;
+    height: 22px;
     margin-bottom: 28px;
     display: flex;
     align-items: center;
     gap: 0;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .tw-text {
