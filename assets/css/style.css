@@ -1336,6 +1336,14 @@ h2.section-title.light {
     line-height: 1.65;
 }
 
+.featured-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
 .featured-link {
     font-family: var(--font-body);
     font-size: 13px;
@@ -1347,8 +1355,8 @@ h2.section-title.light {
     align-items: center;
     gap: 5px;
     transition: opacity var(--transition);
-    margin-top: 8px;
 }
+
 
 .featured-link:hover {
     opacity: 0.6;
