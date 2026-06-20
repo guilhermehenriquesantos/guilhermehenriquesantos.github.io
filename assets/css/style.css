@@ -41,6 +41,8 @@
     --ink-mid: #2a2218;
     --ink-muted: #4a3f32;
     --amber-text: #6e4408;
+    --amber-dim: rgba(228, 162, 80, 0.35);
+    --amber-border: rgba(228, 162, 80, 0.7);
     --light-text: rgba(255, 252, 245, 0.92);
     --light-text-soft: rgba(255, 252, 245, 0.8);
     --border-light: rgba(21, 17, 10, 0.3);
@@ -1109,6 +1111,45 @@ h2.section-title.light {
     color: var(--ink-muted);
     margin-top: 4px;
     line-height: 1.5;
+}
+
+/* TCC link inside UFU card */
+.formacao-tcc {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--amber-border);
+    text-decoration: none;
+    transition: opacity var(--transition);
+}
+
+.formacao-tcc:hover {
+    opacity: 0.75;
+}
+
+.formacao-tcc-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--amber-text);
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.formacao-tcc-title {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--ink-mid);
+    line-height: 1.4;
+}
+
+.formacao-tcc-arrow {
+    font-size: 13px;
+    color: var(--amber-text);
+    flex-shrink: 0;
+    margin-left: auto;
 }
 
 /* PET-SI callout */
